@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehiclePane" prefHeight="448.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="62.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#070a75" height="3.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+      <ImageView fitHeight="357.0" fitWidth="455.0" layoutX="68.0" layoutY="79.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Capture9.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="69.0" layoutX="135.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Capture9.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="201.0" layoutY="13.0" prefHeight="41.0" prefWidth="316.0" text="Add Vehicle Details">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#020436" height="23.0" layoutX="-3.0" layoutY="425.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Label layoutX="51.0" layoutY="148.0" prefHeight="23.0" prefWidth="149.0" text="Vehicle Number   ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="250.0" prefHeight="23.0" prefWidth="149.0" text="No Of Passengers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="198.0" prefHeight="23.0" prefWidth="149.0" text="Maximum Weight">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumber" layoutX="168.0" layoutY="147.0" onAction="#moveToWeight" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="txtPassengers" layoutX="167.0" layoutY="249.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField fx:id="txtWeight" layoutX="167.0" layoutY="197.0" onAction="#moveToPassengers" prefHeight="25.0" prefWidth="202.0" />
+      <ComboBox fx:id="cmbDetail" layoutX="395.0" layoutY="86.0" onAction="#detailCmbMethod" prefHeight="25.0" prefWidth="175.0" />
+      <JFXButton fx:id="btnAddVehicle" buttonType="RAISED" layoutX="429.0" layoutY="362.0" onAction="#btnAddVehicleMethod" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #006400;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

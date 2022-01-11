@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="addDriversPane" prefHeight="448.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="65.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" width="595.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b0e68" height="2.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="589.0" />
+      <ImageView fitHeight="87.0" fitWidth="75.0" layoutX="121.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Capture9.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="363.0" fitWidth="462.0" layoutX="86.0" layoutY="77.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Capture9.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="9.0" prefHeight="54.0" prefWidth="299.0" text="Add Driver Details">
+         <font>
+            <Font name="Bell MT Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="111.0" prefHeight="24.0" prefWidth="140.0" text="Driver Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="243.0" prefHeight="24.0" prefWidth="140.0" text="Contact No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="288.0" prefHeight="24.0" prefWidth="140.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="199.0" prefHeight="24.0" prefWidth="140.0" text="License No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="157.0" prefHeight="24.0" prefWidth="140.0" text="NIC">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="159.0" layoutY="111.0" onAction="#moveToNIC" prefHeight="24.0" prefWidth="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="159.0" layoutY="240.0" onAction="#moveToAddress" prefHeight="24.0" prefWidth="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="159.0" layoutY="288.0" prefHeight="65.0" prefWidth="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLicenseNo" layoutX="159.0" layoutY="196.0" onAction="#moveToContact" prefHeight="24.0" prefWidth="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNIC" layoutX="159.0" layoutY="154.0" onAction="#moveToLicenseNo" prefHeight="24.0" prefWidth="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnAddDriver" buttonType="RAISED" layoutX="419.0" layoutY="374.0" onAction="#addDriverBtnMethod" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #006400;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#090532" height="24.0" layoutX="-5.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="595.0" />
+   </children>
+</AnchorPane>
